@@ -1,0 +1,466 @@
+/* start globel */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
+}
+body {
+    margin:0; padding:0;  height:4000px;  font-family: tahoma; 
+}
+.container {
+    width:1100px;
+    margin:auto;
+}
+/* ul {list-style: none; padding:0; margin:0;} */
+/* End globel */
+/* start myframework */
+.clearfix {
+    clear:both;
+}
+.table { 
+    height: 100%;
+    display: table;
+}
+.table-row {display: table-row;}
+.text-center { text-align: center;}
+.upper {text-transform: uppercase;}
+.main-color { color:#f7600e}
+.main-background { background-color:#f7600e}
+.overlay {
+    background: rgba(49, 55, 61, 0.8);
+    width:100%;
+    height: 100%;
+}
+.hidden {display: none;}
+/* end myframework */
+/* Start Header */
+.header {
+    background: url("macbook-925614.jpg");
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size: cover;
+    color:#fff;
+    background-attachment: fixed;
+    height: 650px;
+} 
+.header .navbar {
+    font-size: 2em;
+    overflow: hidden;
+    padding: 20px 0; 
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+}
+.header .navbar .Tanatos { margin-left: 5%; }
+.header .navbar .menu {
+    font-size: 1em;
+    float: right; 
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    margin-right: 5%;
+}
+.header .navbar .menu:hover {
+    color:#f7600e;
+}
+.header .intro h2 {
+    font-size: 3em; margin-top: 20%;
+}
+.header .intro p {
+    font-size: 20px; line-height: 1.5; color:rgb(218, 218, 218);
+}
+.header .button button {
+    background: transparent;
+    padding: 10px 0 ;
+    width: 120px;
+    font-size: 16px;
+    color:#f7600e;
+    border: 1px solid #909090;
+    margin: 0 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.header .button button:hover { 
+    background-color:#f7600e;
+    color: #fff; 
+    border: 1px solid #f7600e;
+    outline: 0;
+}
+.header .arrow {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+}
+.header .arrow i{
+    border: 1px solid #777;
+    border-radius: 50%;
+    height: 33px;
+    width: 33px;
+    line-height: 33px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.header .arrow i:hover{
+    color:#fff;
+    background-color:#f7600e;
+    outline: 0;
+    border: 1px solid #f7600e;
+}
+/* End Header */
+/* start features */
+.features {
+    padding:70px 0;
+}
+.features .box {
+    float: left;
+    width:33%;
+    overflow:hidden;
+}
+.features .box h2 {
+    text-transform: uppercase;
+    font-weight: normal;
+    color:#444;
+}
+.features .box img {
+    border: 1px solid #f7600e;
+    padding: 15px;
+    margin-right: 1%;
+    transition: all 0.5s ease-in-out;
+    border-radius: 10px;
+}
+.features .box:nth-of-type(2)  {
+    margin-top: 1%;
+}
+.features .box p {
+    color:#777;
+    line-height: 1.5;
+}
+/* end features */
+/* Start Subscribe */
+.subscribe {
+    background: url("tablet-791051.jpg");
+    background-size: cover;
+    height: 250px;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 5%;
+}
+.subscribe form {
+    padding: 100px 0;
+    width:800px;
+    margin:auto;
+    text-align: center;
+}
+.subscribe form input[type="text"]{
+    padding: 5px;
+    width:400px;
+    font-size: 20px;
+    border-radius: 10px;
+    outline: 0;
+    border: none;
+}
+.subscribe form button {
+    padding: 10px;
+    color:#fff;
+    border: none;
+    border-radius: 10px;
+    margin-left: 20px;
+    font-size: 15px;
+    width: 180px;
+    background-color:#f7600e;
+    cursor: pointer;
+    letter-spacing: 3px;
+}
+/* End Subscribe */
+/* Start our-work */
+.our-work { padding: 50px 0; }
+.our-work h2 { font-weight: 500; font-size: 35px; margin-bottom: 0; }
+.our-work p:nth-of-type(1) { line-height: 2; margin: 10px 0 40px; }
+.our-work .show-more {
+    background-color: transparent;
+    border: 1px solid #ccc;
+    width:180px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    color:#555;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.our-work .show-more:hover {
+    color:#fff;
+    background-color:#f7600e;
+    outline: 0;
+    border: 1px solid #f7600e;
+}
+.our-work .item-box {
+    overflow: hidden;
+}
+.our-work .item-box .item {
+    float: left;
+    overflow: hidden;
+    width:30%;
+    margin-left: 1.33333%;
+    margin-bottom: 14px;
+    border-radius: 10px;
+    position: relative;
+}
+.our-work .item-box .item:hover .over {
+    display: block;
+}
+.our-work .item-box .item .over {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(247, 96, 14, 0.9);
+    color:#fff;
+    display: none;
+}
+.our-work .item-box .item .over h4{
+    font-size: 24px;
+    margin-top: 50px;
+}
+.our-work .item-box .item .over button {
+    background: transparent;
+    padding: 10px 5px ;
+    font-size: 16px;
+    color:#fff;
+    border: 2px solid #909090;
+    margin: 0 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.our-work .item-box .item .over button:hover { 
+    background-color:#fff;
+    color: #f7600e; 
+    border: 1px solid #f7600e;
+    outline: 0;
+}
+/* End our-work */
+/* Start testim */
+.testim {
+    background: url("tablet-791051.jpg");
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size: cover;
+    color:#fff;
+    background-attachment: fixed;
+    position: relative;
+}
+.testim .client{
+    padding: 50px 0;
+    font-size: 20px;
+}
+.testim .client img{
+    border-radius: 50%;
+    width: 100px;
+}
+.testim .client q {
+    line-height: 2;
+    font-style: italic;
+}
+.testim .fa-chevron-circle-left,
+.testim .fa-chevron-circle-right {
+    position: absolute;
+    top: 50%;
+    color:#999;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.testim .fa-chevron-circle-left:hover,
+.testim .fa-chevron-circle-right:hover {
+    color:#f7600e
+}
+.testim .fa-chevron-circle-left { left: 5%; }
+.testim .fa-chevron-circle-right { right: 5%; }
+/* End testim */
+/* Start our-team */
+.our-team {
+    padding:50px 0;
+}
+.our-team h2 {
+    font-size:35px;
+    margin-bottom: 0;
+    font-weight: normal;
+}
+.our-team .main {
+    line-height: 1.7;
+    margin:10px 0 40px;
+    color:#888;
+    font-size: 20px;
+}
+.our-team .the-team {
+    overflow: hidden;
+}
+.our-team .the-team .the-person {
+    float: left;
+    width:24%;
+    margin-left: 1%;
+    cursor: pointer;
+}
+.our-team .the-team .the-person:hover {
+    color:rgb(32, 32, 32);
+}
+.our-team .the-team .the-person img {
+    width: 265px;
+    height: 290px;
+    filter: gray;
+    filter: grayscale(1);
+    transition: all 0.5s ease-in-out;
+}
+.our-team .the-team .the-person:hover img {
+    filter: none;
+    filter: grayscale(0);
+    color:rgb(128, 128, 128)
+}
+.our-team .the-team .the-person p{
+    font-size: 15px;
+    color:rgb(128, 128, 128)
+}
+.our-team .the-team .the-person .social a {
+    text-decoration: none;
+}
+.our-team .the-team .the-person .social i {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    color:#f7600e;
+    transition: all 0.5s ease-in-out;
+}
+.our-team .the-team .the-person .social .fa-facebook:hover {
+    color:#3b5998;
+    cursor: pointer;
+}
+.our-team .the-team .the-person .social .fa-youtube:hover { 
+    color:#ff0000;
+}
+.our-team .the-team .the-person .social .fa-instagram:hover { 
+    color:#405de6;
+}
+/* End our-team */
+/* Start Contact */
+.contact {
+    background: url("city-937541.jpg");
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size: cover;
+    background-attachment: fixed;
+    height:700px;
+    padding: 50;
+} 
+.contact .overlay {
+    color:#fff;
+    padding: 50px 0;
+}
+.contact h2 {
+    font-size: 3.5em;
+    font-weight: normal;
+}
+.contact form {
+    width:700px;
+    margin: 50px auto;
+    text-align: center;
+    overflow: hidden;
+}
+.contact form input[type="text"],
+.contact form input[type="email"] {
+    width:48%;
+    padding:0 10px;
+    height:40px;
+    border-radius: 10px;
+    line-height: 40px;
+    border: 1px solid #ccc;
+}
+.contact form input[type="text"] {
+   float: right;
+}
+.contact form input[type="email"] {
+   float: left;
+}
+.contact form textarea{
+    margin-top: 20px;
+    width:100%;
+    padding:10px;
+    height:40px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    height:200px;
+}
+.contact form .info {
+    overflow: hidden;
+} 
+.contact form button {
+    float: left;
+    background: transparent;
+    padding: 10px 0 ;
+    width: 120px;
+    font-size: 16px;
+    color:#f7600e;
+    border: 1px solid #909090;
+    margin: 15px 0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+ .contact form button:hover { 
+    background-color:#f7600e;
+    color: #fff; 
+    border: 1px solid #f7600e;
+    outline: 0;
+}
+.contact form .info .form-icons {
+    float: right;
+}
+.contact form .info .form-icons a {
+    text-decoration: none;
+}
+.contact form .info .form-icons i {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    color:#fff;
+    transition: all 0.5s ease-in-out;
+    margin: 15px 0;
+
+}
+.contact form .info .form-icons .fa-facebook:hover {
+    color:#3b5998;
+    cursor: pointer;
+}
+.contact form .info .form-icons .fa-youtube:hover { 
+    color:#ff0000;
+}
+.contact form .info .form-icons .fa-instagram:hover { 
+    color:#405de6;
+}
+/* End Contact */ 
+/* Start footer */
+.footer {
+    background-color:#3b434c;
+    color:#fff;
+    overflow: hidden;
+    padding: 30px 0;
+}
+.footer .copyright{
+    float: left;
+}
+.footer .design{
+    float:right;
+}
+/* End footer */
